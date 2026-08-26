@@ -1,4 +1,5 @@
 {
   "welcome": "¡Bienvenidos al desafío final del TP de Linux! Las muestras perdieron sus etiquetas. Tu misión es identificarlas y reconstruir el informe.",
+  "welcomeCmd": "",
   "tools": ["blast"]
 }
