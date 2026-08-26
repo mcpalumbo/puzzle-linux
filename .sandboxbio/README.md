@@ -1,91 +1,38 @@
 # 🧬 El caso de las muestras sin etiqueta
 
-Una falla borró las extensiones de varios archivos del laboratorio. Los datos siguen intactos, pero nadie sabe qué contiene cada archivo. Tenés que reconstruir el lote y determinar a qué organismo pertenece una secuencia desconocida.
+Una falla durante el procesamiento borró las extensiones de seis archivos. Los datos siguen intactos, pero el laboratorio no puede continuar hasta que reconstruyas el lote.
 
-> No hace falta instalar nada. Todo sucede en esta terminal.
+> **Misión:** identificar los archivos, ordenarlos, recuperar genes de resistencia y determinar el origen de una secuencia mediante BLAST.
 
-## Tu misión
+## Antes de empezar
 
-Dentro de `muestras/` hay seis archivos sin extensión. Inspeccionalos y renombrá cada uno con la extensión correcta:
+No hace falta instalar nada. Trabajás dentro de una terminal Linux temporal: si rompés algo, podés reiniciar el sandbox.
 
-| Formato | Contenido | Extensión |
+| Etapa | Trabajo | Producto |
 |---|---|---|
-| FASTA | Secuencias biológicas | `.fasta` |
-| FASTQ | Lecturas y calidades | `.fastq` |
-| GFF3 | Anotaciones | `.gff` |
-| BED | Intervalos genómicos | `.bed` |
-| VCF | Variantes | `.vcf` |
-| SAM | Alineamientos | `.sam` |
+| 🔎 1 | Reconocer seis formatos | Archivos con extensión |
+| 🗂️ 2 | Organizar el lote | Dos directorios ordenados |
+| 🧪 3 | Filtrar una anotación | `resistencia.bed` |
+| 🧬 4 | Ejecutar BLAST | `blast.tsv` y `organismo.txt` |
+| 🐍 5 | Automatizar, opcional | `inventario.tsv` |
 
-Empezá por orientarte:
+## Cómo trabajar
 
-```bash
-pwd
-ls -lh
-ls -lh muestras
-```
+1. Abrí la pestaña **1_FORMATOS**.
+2. Completá una misión por vez.
+3. Ejecutá `python3 verificar.py` al final de cada etapa.
+4. Si un objetivo aparece como `[PENDIENTE]`, revisá la entrega indicada.
+5. Usá **PISTAS** solamente cuando lo necesites.
 
-Investigá con `file`, `head`, `tail`, `cat`, `less`, `wc`, `grep` y las combinaciones que consideres útiles. Para renombrar se usa la estructura **`mv ORIGEN DESTINO`**. Reemplazá ambos nombres por las rutas reales; no copies literalmente las palabras `ORIGEN` y `DESTINO`.
+> **Importante:** los comandos distinguen mayúsculas de minúsculas. `Illumina_022026` no es igual a `illumina_022026`.
 
-No todos los formatos se reconocen por una sola línea: buscá encabezados, columnas, separadores y patrones repetidos.
+## Panel de progreso
 
-## Evidencia 1 — Ordenar el lote
-
-Creá `resultados/secuencias/` y `resultados/anotaciones/`. Cuando los archivos estén renombrados:
-
-- copiá FASTA y FASTQ a `resultados/secuencias/`;
-- copiá GFF, BED, VCF y SAM a `resultados/anotaciones/`;
-- conservá los archivos renombrados en `muestras/`.
-
-## Evidencia 2 — Buscar genes de resistencia
-
-Generá `resultados/resistencia.bed` con **solo** los genes cuyo atributo contenga `resistencia`, sin distinguir mayúsculas y minúsculas.
-
-El resultado debe tener cuatro columnas separadas por tabulaciones:
-
-```text
-secuencia    inicio    fin    hebra
-```
-
-Necesitarás combinar al menos `grep`, `cut` y una redirección. En GFF3 esos datos están en las columnas 1, 4, 5 y 7.
-
-## Evidencia 3 — Identificar la muestra por BLAST
-
-En `referencias/genes_resistencia.fasta` hay tres genes de referencia. Construí una base BLAST local y compará contra ella la secuencia FASTA recuperada.
-
-Guardá la salida en `resultados/blast.tsv`, con estas columnas:
-
-```text
-qseqid sseqid pident length evalue bitscore
-```
-
-Comandos útiles:
-
-```bash
-makeblastdb -in referencias/genes_resistencia.fasta -dbtype nucl
-blastn -query ARCHIVO_FASTA -db referencias/genes_resistencia.fasta -outfmt "6 qseqid sseqid pident length evalue bitscore"
-```
-
-Escribí el identificador del mejor hit —solo el identificador— en `resultados/organismo.txt`. Podés obtenerlo de la primera fila con `head` y `cut` o `awk`.
-
-## Comprobar la misión
+Este comando no resuelve ni modifica el ejercicio; solamente revisa tus resultados:
 
 ```bash
 python3 verificar.py
 ```
 
-El verificador marca cada objetivo como **OK** o **PENDIENTE**, pero no modifica tus archivos. Tener objetivos pendientes es normal al comienzo. Si te trabás, abrí **PISTAS** y revelá una ayuda por vez.
+Al comenzar es correcto obtener `0/8`. El caso queda resuelto al llegar a `8/8`.
 
-## Bonus — Automatización con Python
-
-Creá `resultados/inventario.py`: debe recorrer `muestras/` e imprimir una línea por archivo con este formato:
-
-```text
-nombre_de_archivo<TAB>cantidad_de_lineas
-```
-
-Guardá la salida con:
-
-```bash
-python3 resultados/inventario.py > resultados/inventario.tsv
-```
