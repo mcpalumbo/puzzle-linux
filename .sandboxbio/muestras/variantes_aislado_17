@@ -1,0 +1,6 @@
+##fileformat=VCFv4.2
+##source=IUDPT-pipeline
+##contig=<ID=plasmido_A,length=500>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+plasmido_A	42	.	G	A	60	PASS	DP=35
+plasmido_A	177	.	T	C	48	PASS	DP=29

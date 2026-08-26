@@ -1,0 +1,5 @@
+##gff-version 3
+plasmido_A	IUDPT	gene	5	88	.	+	.	ID=gene1;Name=blaLAB;producto=Resistencia_a_beta-lactamicos
+plasmido_A	IUDPT	CDS	5	88	.	+	0	ID=cds1;Parent=gene1;producto=beta-lactamasa
+plasmido_A	IUDPT	gene	120	245	.	-	.	ID=gene2;Name=repA;producto=replicacion_plasmidica
+plasmido_A	IUDPT	gene	310	402	.	+	.	ID=gene3;Name=tetLAB;producto=resistencia_a_tetraciclina
