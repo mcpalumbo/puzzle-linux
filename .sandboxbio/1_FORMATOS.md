@@ -23,7 +23,21 @@ Empezá con uno:
 head -n 5 muestras/Illumina_022026
 ```
 
-Repetí `head -n 5` con los demás nombres. También podés usar `cat` si es corto, `tail` para mirar el final, `wc -l` para contar líneas o `less` para recorrerlo y salir con `q`.
+Vas a observar registros de cuatro líneas: un identificador que comienza con `@`, una secuencia, una línea con `+` y una línea de calidades. Esa estructura corresponde a un archivo **FASTQ**.
+
+Este es el primer renombrado, usado como ejemplo:
+
+```bash
+mv muestras/Illumina_022026 muestras/Illumina_022026.fastq
+```
+
+Comprobá que cambió solamente el nombre:
+
+```bash
+ls -lh muestras
+```
+
+Ahora repetí la investigación con los otros cinco archivos. También podés usar `cat` si son cortos, `tail` para mirar el final, `wc -l` para contar líneas o `less` para recorrerlos y salir con `q`.
 
 Preguntas para cada archivo:
 
@@ -46,9 +60,9 @@ Preguntas para cada archivo:
 
 > **Atención:** FASTQ y SAM pueden comenzar con `@`. No decidas usando solamente el primer carácter.
 
-## Paso 4 — Renombrá
+## Paso 4 — Renombrá los otros cinco
 
-La estructura es **`mv ORIGEN DESTINO`**. Usá el nombre real y agregale una extensión. No escribas literalmente `ORIGEN` o `DESTINO`.
+Tomá como modelo el comando usado con `Illumina_022026`. En cada caso, el primer argumento debe ser el nombre actual y el segundo, ese mismo nombre con la extensión que dedujiste.
 
 Después de cada cambio:
 
@@ -67,4 +81,3 @@ python3 verificar.py
 ```
 
 El primer objetivo debería aparecer como `[OK]`.
-
