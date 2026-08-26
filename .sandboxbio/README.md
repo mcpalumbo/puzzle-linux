@@ -25,11 +25,7 @@ ls -lh
 ls -lh muestras
 ```
 
-Investigá con `file`, `head`, `tail`, `cat`, `less`, `wc`, `grep` y las combinaciones que consideres útiles. Renombrá con `mv`:
-
-```bash
-mv muestras/nombre_actual muestras/nombre_actual.extension
-```
+Investigá con `file`, `head`, `tail`, `cat`, `less`, `wc`, `grep` y las combinaciones que consideres útiles. Para renombrar se usa la estructura **`mv ORIGEN DESTINO`**. Reemplazá ambos nombres por las rutas reales; no copies literalmente las palabras `ORIGEN` y `DESTINO`.
 
 No todos los formatos se reconocen por una sola línea: buscá encabezados, columnas, separadores y patrones repetidos.
 
@@ -78,7 +74,7 @@ Escribí el identificador del mejor hit —solo el identificador— en `resultad
 python3 verificar.py
 ```
 
-El verificador informa qué objetivos completaste, pero no modifica tus archivos. Si te trabás, abrí **PISTAS** y revelá una ayuda por vez.
+El verificador marca cada objetivo como **OK** o **PENDIENTE**, pero no modifica tus archivos. Tener objetivos pendientes es normal al comienzo. Si te trabás, abrí **PISTAS** y revelá una ayuda por vez.
 
 ## Bonus — Automatización con Python
 
@@ -93,4 +89,3 @@ Guardá la salida con:
 ```bash
 python3 resultados/inventario.py > resultados/inventario.tsv
 ```
-

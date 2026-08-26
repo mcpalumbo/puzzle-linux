@@ -18,7 +18,8 @@ EXPECTED = {
 
 
 def check(label, condition):
-    print(f"{'✓' if condition else '·'} {label}")
+    estado = "[OK]       " if condition else "[PENDIENTE]"
+    print(f"{estado} {label}")
     return bool(condition)
 
 
@@ -61,4 +62,4 @@ print(f"\nProgreso: {done}/{len(checks)} objetivos")
 if done == len(checks):
     print("\n🔬 Caso resuelto. El lote está listo para volver al laboratorio.")
 else:
-    print("Abrí la pestaña PISTAS si necesitás ayuda gradual.")
+    print(f"Faltan {len(checks) - done} objetivos. Abrí la pestaña PISTAS si necesitás ayuda gradual.")
