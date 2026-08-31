@@ -1,8 +1,8 @@
-![Archivos bioinformáticos bajo investigación](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/banner-puzzle-800x150.jpg)
+![Archivos bioinformáticos bajo investigación](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/banner-puzzle-neon.jpg)
 
 # 🧬 El caso de las muestras sin etiqueta
 
-Una falla borró las extensiones de seis archivos bioinformáticos. Los datos están intactos, pero el laboratorio necesita reconstruir el lote antes de continuar.
+Sos el/la experto/a en bioinformática de una startup biotecnológica. Una falla en el servidor hizo desaparecer las extensiones de seis archivos clave del laboratorio. Por suerte, los datos están intactos, pero el equipo necesita reconstruir los archivos como estaban.
 
 > 🎯 **Tu misión:** identificar los formatos, ordenar las muestras, recuperar genes de resistencia y resolver el caso con BLAST.
 
@@ -10,7 +10,7 @@ Una falla borró las extensiones de seis archivos bioinformáticos. Los datos es
 
 1. Abrí **1_FORMATOS** y avanzá en orden hasta **4_BLAST**.
 2. Ejecutá los comandos en la terminal.
-3. Al final de cada misión, consultá tu avance con `python3 verificar.py N`.
+3. Al final de cada misión, consultá tu avance con `python3 verificar.py N`, donde `N` es el número de misión.
 4. Si te trabás, abrí **PISTAS** y revelá una ayuda por vez.
 
 La solapa **5_BONUS_PYTHON** es opcional.
