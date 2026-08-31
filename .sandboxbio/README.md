@@ -1,4 +1,4 @@
-![Archivos bioinformáticos bajo investigación](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/banner-puzzle.jpg)
+![Archivos bioinformáticos bajo investigación](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/banner-puzzle.jpg?v=2)
 
 # 🧬 El caso de las muestras sin etiqueta
 
