@@ -14,5 +14,9 @@ MUESTRAS = Path("muestras")
 #     IMPRIMIR nombre, tabulación y cantidad
 
 for archivo in sorted(MUESTRAS.iterdir()):
-    # TODO: reemplazá "pass" por la traducción a Python del pseudocódigo.
+    # PASO 1: mostrá el nombre del archivo actual.
+    # PASO 2: ignorá el elemento si no es un archivo.
+    # PASO 3: abrilo y guardá la cantidad de líneas en una variable.
+    # PASO 4: imprimí el nombre y la cantidad separados por una tabulación.
+    # Reemplazá "pass" a medida que completes los pasos.
     pass
