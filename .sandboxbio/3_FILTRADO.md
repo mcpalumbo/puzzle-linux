@@ -43,16 +43,10 @@ cat resultados/resistencia.bed
 wc -l resultados/resistencia.bed
 ```
 
-### Entrega
-
-- [ ] Exactamente dos filas.
-- [ ] Cuatro columnas tabuladas.
-- [ ] Secuencia, inicio, fin y hebra, en ese orden.
-- [ ] Ningún encabezado.
+## 🧭 Comprobá tu avance
 
 ```bash
-python3 verificar.py
+python3 verificar.py 3
 ```
 
-Al terminar deberías alcanzar `6/8`.
-
+Si algo no coincide, el mensaje te orientará sobre qué revisar sin modificar el resultado.

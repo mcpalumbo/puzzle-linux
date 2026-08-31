@@ -70,14 +70,10 @@ Después de cada cambio:
 ls -lh muestras
 ```
 
-### Entrega
-
-- [ ] Hay exactamente seis archivos.
-- [ ] Cada uno tiene una extensión coherente.
-- [ ] No cambiaste la parte original del nombre.
+## 🧭 Comprobá tu avance
 
 ```bash
-python3 verificar.py
+python3 verificar.py 1
 ```
 
-El primer objetivo debería aparecer como `[OK]`.
+El verificador te indicará qué está bien y qué conviene revisar. No modifica tus archivos.

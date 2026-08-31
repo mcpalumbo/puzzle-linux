@@ -69,14 +69,10 @@ head -n 3 resultados/blast.tsv
 
 La primera fila es el mejor alineamiento. Extraé su segunda columna (`sseqid`) y guardala en `resultados/organismo.txt`. Podés combinar `head -n 1` con `cut -f2` o usar `awk`.
 
-### Entrega
-
-- [ ] `blast.tsv` tiene seis columnas.
-- [ ] La primera fila es el mejor hit.
-- [ ] `organismo.txt` contiene una sola línea y solo el identificador.
+## 🧭 Comprobá tu avance
 
 ```bash
-python3 verificar.py
+python3 verificar.py 4
 ```
 
-Si aparece `8/8`, resolviste el caso.
+Si completaste los ocho objetivos, el caso quedará resuelto. También podés ejecutar `python3 verificar.py` para ver el tablero general.

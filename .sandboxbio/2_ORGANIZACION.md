@@ -37,15 +37,10 @@ ls -lh resultados/anotaciones
 ls -lh muestras
 ```
 
-### Entrega
-
-- [ ] `secuencias/` contiene dos archivos.
-- [ ] `anotaciones/` contiene cuatro archivos.
-- [ ] `muestras/` conserva los seis originales.
+## 🧭 Comprobá tu avance
 
 ```bash
-python3 verificar.py
+python3 verificar.py 2
 ```
 
-Al terminar deberías alcanzar `5/8`.
-
+El verificador revisará esta misión y también te mostrará el progreso total del caso.
