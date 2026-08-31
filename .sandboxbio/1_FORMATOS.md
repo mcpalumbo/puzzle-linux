@@ -1,4 +1,4 @@
-# 🔎 Misión 1 — Identificar los formatos
+![Misión 1: Identificar los formatos](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/mision-1-formatos.jpg)
 
 ## Situación
 
@@ -58,7 +58,7 @@ Preguntas para cada archivo:
 | VCF | Metadatos `##` y encabezado `#CHROM` | `.vcf` |
 | SAM | Encabezados `@HD`/`@SQ` y alineamientos | `.sam` |
 
-> **Atención:** FASTQ y SAM pueden comenzar con `@`. No decidas usando solamente el primer carácter.
+![Tip clave: FASTQ y SAM pueden comenzar con arroba](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/tip-formatos.jpg)
 
 ## Paso 4 — Renombrá los otros cinco
 

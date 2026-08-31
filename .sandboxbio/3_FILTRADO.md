@@ -1,4 +1,4 @@
-# 🧪 Misión 3 — Recuperar genes de resistencia
+![Misión 3: Recuperar genes de resistencia](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/mision-3-filtrado.jpg)
 
 ## Situación
 
@@ -35,6 +35,8 @@ grep ... | cut ...
 Cuando obtengas cuatro columnas, redirigí con `>` a `resultados/resistencia.bed`.
 
 > `|` envía la salida de un comando al siguiente. `>` guarda la salida final en un archivo.
+
+![Antes de usar la redirección, recordá que reemplaza el contenido del archivo de destino](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/tip-redireccion.jpg)
 
 ## Paso 4 — Validar
 

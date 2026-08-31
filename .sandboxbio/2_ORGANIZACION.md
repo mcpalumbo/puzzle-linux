@@ -1,4 +1,4 @@
-# 🗂️ Misión 2 — Organizar los archivos
+![Misión 2: Organizar los archivos](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/mision-2-organizacion.jpg)
 
 ## Situación
 

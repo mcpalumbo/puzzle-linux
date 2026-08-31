@@ -1,4 +1,4 @@
-# 🧬 Misión 4 — Identificar la secuencia con BLAST
+![Misión 4: Identificar la secuencia con BLAST](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/mision-4-blast.jpg)
 
 ## Situación
 
