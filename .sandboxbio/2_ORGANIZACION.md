@@ -1,4 +1,4 @@
-# 🗂️ Misión 2 — Organizar el lote
+# 🗂️ Misión 2 — Organizar los archivos
 
 ## Situación
 

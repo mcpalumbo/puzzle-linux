@@ -2,9 +2,9 @@
 
 # 🧬 El caso de las muestras sin etiqueta
 
-Sos el/la experto/a en bioinformática de una startup biotecnológica. Una falla en el servidor hizo desaparecer las extensiones de seis archivos clave del laboratorio. Por suerte, los datos están intactos, pero el equipo necesita reconstruir los archivos como estaban.
+Formás parte del equipo de bioinformática de una startup biotecnológica. Una falla en el servidor hizo desaparecer las extensiones de seis archivos clave del laboratorio. Por suerte, los datos están intactos: vas a tener que reconocer sus formatos, reorganizarlos y usar BLAST para descubrir a qué gen de resistencia corresponde una secuencia desconocida.
 
-> 🎯 **Tu misión:** identificar los formatos, ordenar las muestras, recuperar genes de resistencia y resolver el caso con BLAST.
+> 🎯 **Tu misión:** identificar los formatos, ordenar los archivos, recuperar genes de resistencia e identificar una secuencia mediante BLAST.
 
 ## 🧭 Cómo jugar
 

@@ -15,7 +15,7 @@ EXPECTED = {
 }
 MISSIONS = {
     1: ("🔎", "Identificar los formatos"),
-    2: ("🗂️", "Organizar el lote"),
+    2: ("🗂️", "Organizar los archivos"),
     3: ("🧪", "Recuperar genes de resistencia"),
     4: ("🧬", "Identificar la secuencia con BLAST"),
 }
@@ -105,7 +105,7 @@ def show_dashboard(results):
     percent = round(100 * total_done / total_checks)
     print(f"\nProgreso total: {total_done}/{total_checks}  {bar(total_done, total_checks)}  {percent} %")
     if total_done == total_checks:
-        print("\n🔬 ¡Caso resuelto! El lote está listo para volver al laboratorio.")
+        print("\n🔬 ¡Caso resuelto! Los archivos están listos para volver al laboratorio.")
     else:
         print("\nPara ver qué revisar en una misión:")
         print("  python3 verificar.py N    # reemplazá N por 1, 2, 3 o 4")
