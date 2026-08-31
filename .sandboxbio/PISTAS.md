@@ -111,5 +111,5 @@ Dentro del `for`, podés preguntar `if not archivo.is_file():` y usar `continue`
 
 <details><summary>Nivel 3 · Contar e imprimir</summary>
 
-Abrí cada archivo con `with archivo.open() as manejador:`. Contá sus líneas con `sum(1 for linea in manejador)` e imprimí `archivo.name` y la cantidad usando `sep="\t"`.
+Abrí cada archivo con `with archivo.open() as contenido:`. Contá sus líneas con `sum(1 for linea in contenido)` e imprimí `archivo.name` y la cantidad usando `sep="\t"`.
 </details>

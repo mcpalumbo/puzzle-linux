@@ -73,7 +73,7 @@ for archivo in sorted(MUESTRAS.iterdir()):
 
 Un `for` repite instrucciones. En cada vuelta, la variable `archivo` representa un elemento diferente de `muestras/`.
 
-Los cuatro espacios antes de `pass` forman la **identación**. Le indican a Python qué instrucciones deben repetirse dentro del `for`. La identacion es obligatoria.
+Los cuatro espacios antes de `pass` forman la **indentación**. Le indican a Python qué instrucciones deben repetirse dentro del `for`. La indentación es obligatoria.
 
 Reemplazá `pass` por:
 
@@ -116,15 +116,15 @@ Guardá y ejecutá nuevamente. Los seis nombres deberían seguir apareciendo.
 Ahora reemplazá la línea `print(archivo.name)` por este bloque:
 
 ```python
-    with archivo.open() as manejador:
-        cantidad = sum(1 for linea in manejador)
+    with archivo.open() as contenido:
+        cantidad = sum(1 for linea in contenido)
 ```
 
 Acá ocurren tres cosas:
 
 1. `archivo.open()` abre el archivo actual.
-2. `manejador` es una variable que permite leer su contenido.
-3. `sum(1 for linea in manejador)` suma uno por cada línea encontrada.
+2. `contenido` es una variable que permite leer lo que hay dentro.
+3. `sum(1 for linea in contenido)` suma uno por cada línea encontrada.
 
 El resultado se guarda en otra variable, `cantidad`. El nombre podría ser distinto, pero elegimos uno que recuerde qué dato contiene.
 
@@ -151,7 +151,7 @@ for ...:
     print(...)
 ```
 
-Este bloque muestra la estructura y la identación, pero los puntos suspensivos deben quedar reemplazados por el código que fuiste agregando.
+Este bloque muestra la estructura y la indentación, pero los puntos suspensivos deben quedar reemplazados por el código que fuiste agregando.
 
 ## 🧪 Probar y guardar el resultado
 
