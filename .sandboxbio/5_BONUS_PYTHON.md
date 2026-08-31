@@ -1,6 +1,6 @@
 ![Bonus Python: Automatizar el inventario](https://raw.githubusercontent.com/mcpalumbo/puzzle-linux/main/.sandboxbio/imagenes/bonus-python.jpg)
 
-Esta misión es opcional y no forma parte de los ocho objetivos principales. No necesitás experiencia previa programando: vamos a construir el script de a poco y probarlo después de cada cambio.
+Esta misión es opcional y no forma parte de los objetivos principales. No necesitás experiencia previa programando: vamos a construir el script de a poco y probarlo después de cada cambio.
 
 > 🎯 **Objetivo:** completar `inventario.py` para obtener automáticamente el nombre y la cantidad de líneas de cada archivo de `muestras/`.
 
@@ -73,7 +73,7 @@ for archivo in sorted(MUESTRAS.iterdir()):
 
 Un `for` repite instrucciones. En cada vuelta, la variable `archivo` representa un elemento diferente de `muestras/`.
 
-Los cuatro espacios antes de `pass` forman la **sangría**. Le indican a Python qué instrucciones deben repetirse dentro del `for`. La sangría es obligatoria.
+Los cuatro espacios antes de `pass` forman la **identación**. Le indican a Python qué instrucciones deben repetirse dentro del `for`. La identacion es obligatoria.
 
 Reemplazá `pass` por:
 
@@ -151,7 +151,7 @@ for ...:
     print(...)
 ```
 
-Este bloque muestra la estructura y la sangría, pero los puntos suspensivos deben quedar reemplazados por el código que fuiste agregando.
+Este bloque muestra la estructura y la identación, pero los puntos suspensivos deben quedar reemplazados por el código que fuiste agregando.
 
 ## 🧪 Probar y guardar el resultado
 
